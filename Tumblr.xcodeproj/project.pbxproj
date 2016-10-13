@@ -10,8 +10,9 @@
 		60206C391DAF3413009CAB6A /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60206C381DAF3413009CAB6A /* AFNetworking.framework */; };
 		60206C3E1DAF360C009CAB6A /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60206C3B1DAF360C009CAB6A /* AFNetworking.framework */; };
 		60206C3F1DAF360C009CAB6A /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 60206C3B1DAF360C009CAB6A /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60206C441DAF3D4B009CAB6A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60206C431DAF3D4B009CAB6A /* TableViewCell.swift */; };
 		C928306A1DAF252300379861 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92830691DAF252300379861 /* AppDelegate.swift */; };
-		C928306C1DAF252300379861 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C928306B1DAF252300379861 /* ViewController.swift */; };
+		C928306C1DAF252300379861 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C928306B1DAF252300379861 /* PhotoViewController.swift */; };
 		C928306F1DAF252300379861 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C928306D1DAF252300379861 /* Main.storyboard */; };
 		C92830711DAF252300379861 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C92830701DAF252300379861 /* Assets.xcassets */; };
 		C92830741DAF252300379861 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C92830721DAF252300379861 /* LaunchScreen.storyboard */; };
@@ -34,13 +35,11 @@
 /* Begin PBXFileReference section */
 		60206C351DAF33E2009CAB6A /* Tumblr.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Tumblr.xcodeproj; sourceTree = "<group>"; };
 		60206C381DAF3413009CAB6A /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
-		60206C3A1DAF360C009CAB6A /* AFDCA4FA-7553-3161-99C0-13889B855087.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "AFDCA4FA-7553-3161-99C0-13889B855087.bcsymbolmap"; path = "Carthage/Build/iOS/AFDCA4FA-7553-3161-99C0-13889B855087.bcsymbolmap"; sourceTree = "<group>"; };
 		60206C3B1DAF360C009CAB6A /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
-		60206C3C1DAF360C009CAB6A /* AFNetworking.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = AFNetworking.framework.dSYM; path = Carthage/Build/iOS/AFNetworking.framework.dSYM; sourceTree = "<group>"; };
-		60206C3D1DAF360C009CAB6A /* F54B5828-E52F-336B-958D-C7BFE79E43E9.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "F54B5828-E52F-336B-958D-C7BFE79E43E9.bcsymbolmap"; path = "Carthage/Build/iOS/F54B5828-E52F-336B-958D-C7BFE79E43E9.bcsymbolmap"; sourceTree = "<group>"; };
+		60206C431DAF3D4B009CAB6A /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		C92830661DAF252300379861 /* Tumblr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tumblr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92830691DAF252300379861 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C928306B1DAF252300379861 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C928306B1DAF252300379861 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		C928306E1DAF252300379861 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C92830701DAF252300379861 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C92830731DAF252300379861 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,10 +76,7 @@
 		C928305D1DAF252200379861 = {
 			isa = PBXGroup;
 			children = (
-				60206C3A1DAF360C009CAB6A /* AFDCA4FA-7553-3161-99C0-13889B855087.bcsymbolmap */,
 				60206C3B1DAF360C009CAB6A /* AFNetworking.framework */,
-				60206C3C1DAF360C009CAB6A /* AFNetworking.framework.dSYM */,
-				60206C3D1DAF360C009CAB6A /* F54B5828-E52F-336B-958D-C7BFE79E43E9.bcsymbolmap */,
 				C92830681DAF252300379861 /* Tumblr */,
 				C92830671DAF252300379861 /* Products */,
 				60206C341DAF33E2009CAB6A /* Frameworks */,
@@ -98,8 +94,9 @@
 		C92830681DAF252300379861 /* Tumblr */ = {
 			isa = PBXGroup;
 			children = (
+				60206C431DAF3D4B009CAB6A /* TableViewCell.swift */,
 				C92830691DAF252300379861 /* AppDelegate.swift */,
-				C928306B1DAF252300379861 /* ViewController.swift */,
+				C928306B1DAF252300379861 /* PhotoViewController.swift */,
 				C928306D1DAF252300379861 /* Main.storyboard */,
 				C92830701DAF252300379861 /* Assets.xcassets */,
 				C92830721DAF252300379861 /* LaunchScreen.storyboard */,
@@ -187,7 +184,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C928306C1DAF252300379861 /* ViewController.swift in Sources */,
+				60206C441DAF3D4B009CAB6A /* TableViewCell.swift in Sources */,
+				C928306C1DAF252300379861 /* PhotoViewController.swift in Sources */,
 				C928306A1DAF252300379861 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
